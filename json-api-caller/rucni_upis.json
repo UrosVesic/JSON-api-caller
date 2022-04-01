@@ -1,0 +1,21 @@
+{
+  "country_code": "BiH",
+  "country_name": "Bosnia and Herzegovina",
+  "languages": [
+    {
+      "code": "rs",
+      "name": "Serbian",
+      "native": "Српски"
+    },
+    {
+      "code": "cro",
+      "name": "Croatian",
+      "native": "hrvatski"
+    },
+    {
+      "code": "bos",
+      "name": "Bosnian",
+      "native": "bosanski"
+    }
+  ]
+}
