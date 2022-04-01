@@ -9,8 +9,7 @@ public class Country {
 	private String code;
 	@SerializedName("country_name")
 	private String name;
-	@SerializedName("region_name")
-	private String region;
+	
 	@SerializedName("languages")
 	private Language[] languages;
 	
@@ -18,11 +17,10 @@ public class Country {
 	
 	
 	
-	public Country(String code, String name, String region) {
+	public Country(String code, String name) {
 		super();
 		this.code = code;
 		this.name = name;
-		this.region = region;
 	}
 	
 	
@@ -51,18 +49,13 @@ public class Country {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getRegion() {
-		return region;
-	}
-	public void setRegion(String region) {
-		this.region = region;
-	}
+	
 
 
 
 	@Override
 	public String toString() {
-		return "Country [code=" + code + ", name=" + name + ", region=" + region + ", languages="
+		return "Country [code=" + code + ", name=" + name+", languages="
 				+ Arrays.toString(languages) + "]";
 	}
 	
