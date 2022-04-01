@@ -1,0 +1,55 @@
+[
+  {
+    "country_code": "MNE",
+    "country_name": "Montenegro",
+    "languages": [
+      {
+        "code": "rs",
+        "name": "Serbian",
+        "native": "Српски"
+      },
+      {
+        "code": "mne",
+        "name": "Montenegrin",
+        "native": "црногорски"
+      }
+    ]
+  },
+  {
+    "country_code": "BiH",
+    "country_name": "Bosnia and Herzegovina",
+    "languages": [
+      {
+        "code": "rs",
+        "name": "Serbian",
+        "native": "Српски"
+      },
+      {
+        "code": "cro",
+        "name": "Croatian",
+        "native": "hrvatski"
+      },
+      {
+        "code": "bos",
+        "name": "Bosnian",
+        "native": "bosanski"
+      }
+    ]
+  },
+  {
+    "country_code": "CRO",
+    "country_name": "Croatia",
+    "languages": [
+      {
+        "code": "rs",
+        "name": "Serbian",
+        "native": "Српски"
+      },
+      {
+        "code": "cro",
+        "name": "Croatian",
+        "native": "hrvatski"
+      }
+    ]
+  }
+]
