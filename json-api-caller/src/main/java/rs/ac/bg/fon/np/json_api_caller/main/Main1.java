@@ -1,6 +1,8 @@
 package rs.ac.bg.fon.np.json_api_caller.main;
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
@@ -14,12 +16,11 @@ import rs.ac.bg.fon.np.json_api_caller.domain.Country;
 import rs.ac.bg.fon.np.json_api_caller.domain.Language;
 
 public class Main1 {
-	public static String ACCESS_KEY = "66c6b844be0dce06b2b5dc66aaf4ba5f";
 	public static String IP = "178.148.120.167";
 	
 	public static void main(String[] args) {
 		try {
-			URL url = new URL("http://api.ipstack.com/"+IP+"?access_key="+ACCESS_KEY);
+			URL url = new URL("http://api.ipstack.com/"+IP+"?access_key="+procitajKljuc());
 			HttpURLConnection con = (HttpURLConnection) url.openConnection();
 			HttpURLConnection con2 = (HttpURLConnection) url.openConnection();
 			
@@ -46,5 +47,16 @@ public class Main1 {
 			e.printStackTrace();
 		}
 
+	}
+
+	private static String procitajKljuc() {
+		Gson gson = new Gson();
+		try(FileReader fr =new FileReader("key.json")){
+			JsonObject jsonObject =  gson.fromJson(fr, JsonObject.class);
+			return jsonObject.get("key").getAsString();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
 	}
 }
